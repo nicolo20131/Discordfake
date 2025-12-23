@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discord</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="logo-discord">
+        <img src="login-screen-logo.svg" alt="Logo Discord"/>
+    </div>
+
+    <div class="container">
+        <div class="flex-item flex-grow-2">
+            <div class="title">
+                <h1>Welcome back!</h1>
+                <p>We're so excited to see you again!</p>
+            </div>
+            <form method="POST" action="login.php" class="form">
+                <div class="form-group">
+                    <label for="email">EMAIL OR PHONE NUMBER <span class="red">*</span></label>
+                    <input class="form-input" name="email" type="email" id="email"/>
+                </div>
+                <div class="form-group">
+                    <label for="password">PASSWORD <span class="red">*</span></label>
+                    <input class="form-input" name="password" type="password" id="password"/>
+                    <a href="#" class="link">Forgot your password?</a>
+                </div>
+                <div class="form-group">
+                    <input class="btn-submit" type="submit" value="Log In">
+                    <p class="need-account">Need an account? <a href="#">Register</a></p>
+                </div>
+            </form>
+        </div>
+        <div class="flex-item flex-grow-1">
+            <div class="code-qr">
+                <img src="qrcode-discord-img.png" alt="QR code"/>
+            </div>
+            <div class="content">
+                <h2>Log in with QR Code</h2>
+                <p>Scan this with the <strong>Discord mobile app</strong> to log in instantly.</p>
+                <button type="button" class="code-qr-btn">
+                    <div class="code-qr-content">
+                        Or, sign in with passkey
+                    </div>
+                </button>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+</html>
